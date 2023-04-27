@@ -41,4 +41,14 @@ object mariano {
 	method golosinasDeSabor(unSabor){
 		return golosinas.filter({g=>g.gusto()==unSabor})
 	}
+	
+	method sabores(unSabor){
+		return golosinas.map({g=> g.gusto()}).asSet()
+	}
+	method golosinaMasCara(){
+		return golosinas.max({g=> g.precio()})
+	}
+	method pesoGolosinas(){
+		return golosinas.sum({g=>g.peso()})
+	}
 }
