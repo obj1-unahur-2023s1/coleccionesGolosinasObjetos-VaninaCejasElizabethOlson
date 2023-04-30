@@ -1,4 +1,5 @@
 import mariano.*
+
 object bombon {
 	var peso=15
 	method precio(){return 5}
@@ -36,9 +37,7 @@ object chupetin{
 	method gusto(){return "naranja"}
 	method libreGluten(){return true}
 	method mordisco(){
-		if(peso > 2){
-			peso=peso*0.1
-		}	
+		if(peso > 2){peso=peso*0.9}	
 	}
 }	
 

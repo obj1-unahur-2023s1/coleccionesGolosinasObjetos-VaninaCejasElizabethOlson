@@ -51,4 +51,9 @@ object mariano {
 	method pesoGolosinas(){
 		return golosinas.sum({g=>g.peso()})
 	}
+	method golosinasFaltantes(golosinasDeseadas){
+		const golosinasDeseadasArray =[]
+		
+		return golosinasDeseadasArray.map({g=>g.comprar()==g}).asSet()
+	}
 }
